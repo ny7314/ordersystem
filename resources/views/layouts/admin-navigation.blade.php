@@ -21,7 +21,7 @@
                         葬儀社様・管理
                     </x-nav-link>
                     <x-nav-link :href="route('admin.expired-owners.index')" :active="request()->routeIs('admin.expired-owners.index')">
-                        期限切れ葬儀社様一覧
+                        有効期限切れ葬儀社様一覧
                     </x-nav-link>
                 </div>
             </div>
@@ -73,6 +73,12 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.owners.index')" :active="request()->routeIs('admin.owners.index')">
+                葬儀社様・管理
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('admin.expired-owners.index')" :active="request()->routeIs('admin.expired-owners.index')">
+                有効期限切れ葬儀社様一覧
             </x-responsive-nav-link>
         </div>
 
