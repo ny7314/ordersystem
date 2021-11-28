@@ -78,8 +78,8 @@
                         <x-select-image :images="$images" name="image5" />
                         <div class="p-2 w-1/2 mx-auto">
                           <div class="relative flex justify-around">
-                            <div><input type="radio" name="is_selling" value="1" class="mr-3" checked>注文受付中</div>
-                            <div><input type="radio" name="is_selling" value="0" class="mr-3">注文停止中</div>
+                            <div><input type="radio" name="is_selling" value="{{ \Constant::PRODUCT_LIST['add'] }}" class="mr-3" checked>注文受付中</div>
+                            <div><input type="radio" name="is_selling" value="{{ \Constant::PRODUCT_LIST['reduce'] }}" class="mr-3">注文停止中</div>
                           </div>
                         </div>
                         <div class="p-2 w-full flex justify-around mt-8">
