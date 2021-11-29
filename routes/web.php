@@ -36,6 +36,7 @@ Route::prefix('cart')
     Route::post('add', [CartController::class, 'add'])
     ->name('cart.add');
     Route::post('delete/{item}', [CartController::class, 'delete'])->name('cart.delete');
+    Route::get('checkout', [CartController::class, 'checkout'])->name('cart.checkout');
     
 });
 
@@ -43,6 +44,7 @@ Route::get('/component-test1', [ComponentTestController::class, 'showComponent1'
 Route::get('/component-test2', [ComponentTestController::class, 'showComponent2']);
 Route::get('/servicecontainertest', [LifeCycleTestController::class, 'showServiceContainerTest']);
 Route::get('/serviceprovidertest', [LifeCycleTestController::class, 'showServiceProviderTest']);
+
         
 
 require __DIR__.'/auth.php';
