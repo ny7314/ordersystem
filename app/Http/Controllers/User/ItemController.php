@@ -34,7 +34,7 @@ class ItemController extends Controller
     public function index(Request $request)
     {
         // 非同期にメール送信
-        SendThanksMail::dispatch();
+        // SendThanksMail::dispatch();
 
         $categories = PrimaryCategory::with('secondary')
         ->get();
