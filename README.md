@@ -17,12 +17,12 @@ git clone -b ブランチ名 https://github.com/ny7314/ordersystem.git
 
 .envファイルの中の下記をご利用の環境に合わせて変更してください
 
-- DB_CONNECTION=mysql
-- DB_HOST=127.0.0.1
-- DB_PORT=8889
-- DB_DATABASE=ordersystem
-- DB_USERNAME=p&efoods
-- DB_PASSWORD=password123
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=8889
+DB_DATABASE=ordersystem
+DB_USERNAME=p&efoods
+DB_PASSWORD=password123
 
 XAMPP/MAMPまたは他の開発環境でDBを起動した後に
 
